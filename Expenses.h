@@ -7,6 +7,9 @@ public:
 	Expenses();
 	~Expenses();
 
+	void setMortgage(double mortgage);
+	double getMortgage();
+
 private:
 	// Housing
 	double mortgage;
