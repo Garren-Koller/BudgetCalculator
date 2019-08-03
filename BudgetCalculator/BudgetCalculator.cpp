@@ -3,22 +3,40 @@
 
 #include "pch.h"
 #include <iostream>
+#include <vector>
+#include <string>
+#include <fstream>
+#include <iterator>
 
 using std::cout;
 using std::endl;
-
+using std::endl;
+using std::ofstream;
+using std::ostream_iterator;
+using std::string;
+using std::copy;
 void Intro();
 
 int main()
-{
-	Intro();
+{//Intro();
+
+	std::vector<std::string> example;
+	example.push_back("this");
+	example.push_back("is");
+	example.push_back("a");
+	example.push_back("test");
+
+
+	ofstream file_;
+	file_.open("example.txt");
+
+	ofstream output_file("example.txt");
+	ostream_iterator<string> output_iterator(output_file, "\n");
+	copy(example.begin(), example.end(), output_iterator);
+	
 }
 
 
-<<<<<<< Updated upstream
-
-
-=======
 void Intro()
 {
 	/////////////////////////////////////////////////////////////////// Intro
@@ -64,4 +82,4 @@ void Intro()
 
 	system("pause");
 }
->>>>>>> Stashed changes
+

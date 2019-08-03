@@ -151,16 +151,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\..\..\Ke%27Ondrae\Documents\GitHub\BudgetCalculator\BudgetCalculator\Calculator.h" />
-    <ClInclude Include="..\..\..\..\..\Ke%27Ondrae\Documents\GitHub\BudgetCalculator\BudgetCalculator\Expenses.h" />
-    <ClInclude Include="..\..\..\..\..\Ke%27Ondrae\Documents\GitHub\BudgetCalculator\BudgetCalculator\Income.h" />
+    <ClInclude Include="Calculator.h" />
+    <ClInclude Include="Expenses.h" />
+    <ClInclude Include="Income.h" />
     <ClInclude Include="pch.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\..\Ke%27Ondrae\Documents\GitHub\BudgetCalculator\BudgetCalculator\Calculator.cpp" />
-    <ClCompile Include="..\..\..\..\..\Ke%27Ondrae\Documents\GitHub\BudgetCalculator\BudgetCalculator\Expenses.cpp" />
-    <ClCompile Include="..\..\..\..\..\Ke%27Ondrae\Documents\GitHub\BudgetCalculator\BudgetCalculator\Income.cpp" />
     <ClCompile Include="BudgetCalculator.cpp" />
+    <ClCompile Include="Calculator.cpp" />
+    <ClCompile Include="Expenses.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>

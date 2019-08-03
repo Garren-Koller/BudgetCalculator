@@ -18,13 +18,13 @@
     <ClInclude Include="pch.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\..\Ke%27Ondrae\Documents\GitHub\BudgetCalculator\BudgetCalculator\Calculator.h">
+    <ClInclude Include="Calculator.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\..\Ke%27Ondrae\Documents\GitHub\BudgetCalculator\BudgetCalculator\Income.h">
+    <ClInclude Include="Expenses.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\..\Ke%27Ondrae\Documents\GitHub\BudgetCalculator\BudgetCalculator\Expenses.h">
+    <ClInclude Include="Income.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -35,13 +35,10 @@
     <ClCompile Include="BudgetCalculator.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\..\Ke%27Ondrae\Documents\GitHub\BudgetCalculator\BudgetCalculator\Calculator.cpp">
+    <ClCompile Include="Calculator.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\..\Ke%27Ondrae\Documents\GitHub\BudgetCalculator\BudgetCalculator\Income.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\..\Ke%27Ondrae\Documents\GitHub\BudgetCalculator\BudgetCalculator\Expenses.cpp">
+    <ClCompile Include="Expenses.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
