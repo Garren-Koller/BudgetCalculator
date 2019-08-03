@@ -1,4 +1,4 @@
-#include "pch.h"
+
 #include "Income.h"
 
 Income::Income(double yourMonthlyIncome, double spouseMonthlyIncome)

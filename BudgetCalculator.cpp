@@ -1,7 +1,6 @@
 // BudgetCalculator.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
 
-#include "pch.h"
 #include <iostream>
 #include <vector>
 #include <string>
@@ -19,12 +18,12 @@ void Intro();
 
 int main()
 {//Intro();
-
+cout << "test";
 	std::vector<std::string> example;
-	example.push_back("this");
-	example.push_back("is");
-	example.push_back("a");
-	example.push_back("test");
+	example.emplace_back("this");
+	example.emplace_back("is");
+	example.emplace_back("a");
+	example.emplace_back("test");
 
 
 	ofstream file_;
