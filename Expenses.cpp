@@ -1,8 +1,47 @@
 #include "Expenses.h"
 
 Expenses::Expenses() {
-this -> mortgage = 0.0;
-
+    this -> mortgage = 0.0;
+    this-> mortgage2nd = 0.0;
+    this-> insurance = 0.0;
+    this-> propertyTax = 0.0;
+    this-> homeMaintenance = 0.0;
+    this-> electricGas = 0.0;
+    this-> waterSewer = 0.0;
+    this-> phoneCell = 0.0;
+    this-> cableInternet = 0.0;
+    this-> carPayment = 0.0;
+    this-> carPayment2nd = 0.0;
+    this-> monthlyCarInsurance = 0.0;
+    this-> gasoline = 0.0;
+    this-> carMaintenance = 0.0;
+    this-> parkingTolls = 0.0;
+    this-> groceriesHouseholdGoods = 0.0;
+    this-> schoolLunches = 0.0;
+    this-> mealsOut = 0.0;
+    this-> healthInsurance = 0.0;
+    this-> prescriptions = 0.0;
+    this-> lifeInsurance = 0.0;
+    this-> clothingForFamily = 0.0;
+    this-> dryCleaningLaundry = 0.0;
+    this-> barberBeautyShop = 0.0;
+    this-> childCare = 0.0;
+    this-> childSupportPayments = 0.0;
+    this-> schoolTuitionSupplies = 0.0;
+    this-> creditCards = 0.0;
+    this-> storeCards = 0.0;
+    this-> medicalDebt = 0.0;
+    this-> studentLoans = 0.0;
+    this-> taxPayments = 0.0;
+    this-> miscellaneousDebtPayments = 0.0;
+    this-> hobbiesSports = 0.0;
+    this-> tobaccoAlcohol = 0.0;
+    this-> newspaperMagazines = 0.0;
+    this-> travelRecreation = 0.0;
+    this-> churchCharitableDonations = 0.0;
+    this-> petCare = 0.0;
+    this-> holidaysBirthdays = 0.0;
+    this-> otherExpenses = 0.0;
 }
 
 Expenses::~Expenses() = default;
