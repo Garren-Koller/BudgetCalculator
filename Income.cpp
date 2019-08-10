@@ -19,18 +19,20 @@ Income::~Income()
 
 void Income::setYourMonthlyIncome(double netPayYours)
 {
+	this->yourMonthlyIncome = netPayYours;
 }
 
 void Income::setSpouseMonthlyIncome(double netPaySpouce)
 {
+	this->spouseMonthlyIncome = netPaySpouce;
 }
 
 double Income::getYourMonthlyIncome()
 {
-	return 0.0;
+	return yourMonthlyIncome;
 }
 
 double Income::getSpouseMonthlyIncome()
 {
-	return 0.0;
+	return spouseMonthlyIncome;
 }
