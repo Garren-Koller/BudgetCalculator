@@ -1,6 +1,7 @@
 #include "Expenses.h"
 
 Expenses::Expenses() {
+this -> mortgage = 0.0;
 
 }
 
@@ -334,7 +335,8 @@ double Expenses::getOtherExpenses() {
     return otherExpenses;
 }
 
-Expenses::Expenses(double mortgage, double mortgage2nd, double insurance, double propertyTax, double homeMaintenance,
+Expenses::Expenses(
+                    double mortgage, double mortgage2nd, double insurance, double propertyTax, double homeMaintenance,
                    double electricGas, double waterSewer, double phoneCell, double cableInternet, double carPayment,
                    double carPayment2nd, double monthlyCarInsurance, double gasoline, double carMaintenance,
                    double parkingTolls, double groceriesHouseholdGoods, double schoolLunches, double mealsOut,
@@ -343,6 +345,50 @@ Expenses::Expenses(double mortgage, double mortgage2nd, double insurance, double
                    double schoolTuitionSupplies, double creditCards, double storeCards, double medicalDebt,
                    double studentLoans, double taxPayments, double miscellaneousDebtPayments, double hobbiesSports,
                    double tobaccoAlcohol, double newspaperMagazines, double travelRecreation,
-                   double churchCharitableDonations, double petCare, double holidaysBirthdays, double otherExpenses) {
+                   double churchCharitableDonations, double petCare, double holidaysBirthdays, double otherExpenses)
+
+                   {
+
+    this-> mortgage = mortgage;
+    this-> mortgage2nd = mortgage2nd;
+    this-> insurance = insurance;
+    this-> propertyTax = propertyTax;
+    this-> homeMaintenance = homeMaintenance;
+    this-> electricGas =electricGas;
+    this-> waterSewer = waterSewer;
+    this-> phoneCell = phoneCell;
+    this-> cableInternet = cableInternet;
+    this-> carPayment = carPayment;
+    this-> carPayment2nd = carPayment2nd;
+    this-> monthlyCarInsurance = monthlyCarInsurance;
+    this-> gasoline = gasoline;
+    this-> carMaintenance = carMaintenance;
+    this-> parkingTolls = parkingTolls;
+    this-> groceriesHouseholdGoods = groceriesHouseholdGoods;
+    this-> schoolLunches = schoolLunches;
+    this-> mealsOut = mealsOut;
+    this-> healthInsurance = healthInsurance;
+    this-> prescriptions = prescriptions;
+    this-> lifeInsurance = lifeInsurance;
+    this-> clothingForFamily = clothingForFamily;
+    this-> dryCleaningLaundry = dryCleaningLaundry;
+    this-> barberBeautyShop = barberBeautyShop;
+    this-> childCare = childCare;
+    this-> childSupportPayments = childSupportPayments;
+    this-> schoolTuitionSupplies = schoolTuitionSupplies;
+    this-> creditCards = creditCards;
+    this-> storeCards = storeCards;
+    this-> medicalDebt = medicalDebt;
+    this-> studentLoans = studentLoans;
+    this-> taxPayments = taxPayments;
+    this-> miscellaneousDebtPayments = miscellaneousDebtPayments;
+    this-> hobbiesSports = hobbiesSports;
+    this-> tobaccoAlcohol = tobaccoAlcohol;
+    this-> newspaperMagazines = newspaperMagazines;
+    this-> travelRecreation = travelRecreation;
+    this-> churchCharitableDonations = churchCharitableDonations;
+    this-> petCare = petCare;
+    this-> holidaysBirthdays = holidaysBirthdays;
+    this-> otherExpenses = otherExpenses;
 
 }
