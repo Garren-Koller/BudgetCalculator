@@ -6,7 +6,16 @@ class Expenses : public Calculator
 public:
 	Expenses();
 	~Expenses();
-
+    Expenses(double mortgage, double mortgage2nd, double insurance, double propertyTax,
+            double homeMaintenance, double electricGas, double waterSewer, double phoneCell,
+            double cableInternet, double carPayment, double carPayment2nd, double monthlyCarInsurance,
+            double gasoline, double carMaintenance, double parkingTolls, double groceriesHouseholdGoods,
+            double schoolLunches, double mealsOut, double healthInsurance, double prescriptions,
+             double lifeInsurance, double clothingForFamily, double dryCleaningLaundry, double barberBeautyShop,
+             double childCare, double childSupportPayments, double schoolTuitionSupplies, double creditCards,
+             double storeCards, double medicalDebt, double studentLoans, double taxPayments, double miscellaneousDebtPayments,
+             double hobbiesSports, double tobaccoAlcohol, double newspaperMagazines, double travelRecreation,
+             double churchCharitableDonations, double petCare, double holidaysBirthdays, double otherExpenses);
     // Housing
 	void setMortgage(double mortgage);
     void setMortgage2nd(double mortgage2nd);

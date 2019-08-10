@@ -6,6 +6,8 @@
 #include <string>
 #include <fstream>
 #include <iterator>
+#include "Expenses.h"
+#include "Income.h"
 
 using std::cout;
 using std::endl;
@@ -32,7 +34,9 @@ cout << "test";
 	ofstream output_file("example.txt");
 	ostream_iterator<string> output_iterator(output_file, "\n");
 	copy(example.begin(), example.end(), output_iterator);
-	
+
+	Income i();
+
 }
 
 
