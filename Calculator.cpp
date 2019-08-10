@@ -17,13 +17,13 @@ Calculator::~Calculator() = default;
 
 void Calculator::addExpences(double currentExpence) {
 
-    totalExpences = totalExpences = currentExpence;
+    totalExpences += currentExpence;
 
 }
 
 
 void Calculator::addIncome(double currentIncome) {
-    totalIncome = totalIncome + currentIncome;
+    totalIncome += currentIncome;
 }
 
 void Calculator::display() {

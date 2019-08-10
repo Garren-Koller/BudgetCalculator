@@ -21,7 +21,7 @@ void Intro();
 
 int main()
 {//Intro();
-cout << "test";
+
 	std::vector<std::string> example;
 	example.emplace_back("this");
 	example.emplace_back("is");
@@ -36,8 +36,9 @@ cout << "test";
 	ostream_iterator<string> output_iterator(output_file, "\n");
 	copy(example.begin(), example.end(), output_iterator);
 
-	Income i();
+	Income i(1000, 3000);
 
+	i.display(true);
 }
 
 

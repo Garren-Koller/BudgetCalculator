@@ -14,6 +14,8 @@ public:
 	double getYourMonthlyIncome();
 	double getSpouseMonthlyIncome();
 
+	void display();
+	void display(bool displayAll);
 
 private:
 	double yourMonthlyIncome;

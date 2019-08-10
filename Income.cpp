@@ -5,6 +5,8 @@ Income::Income(double yourMonthlyIncome, double spouseMonthlyIncome)
 {
 	this->yourMonthlyIncome = yourMonthlyIncome;
 	this->spouseMonthlyIncome = spouseMonthlyIncome;
+	addIncome(yourMonthlyIncome);
+	addIncome(spouseMonthlyIncome);
 }
 
 Income::Income()
@@ -34,4 +36,17 @@ double Income::getYourMonthlyIncome()
 double Income::getSpouseMonthlyIncome()
 {
 	return spouseMonthlyIncome;
+}
+
+void Income::display() {
+	cout << "Your Monthly Income: " << getYourMonthlyIncome() << endl;
+	cout << "Spouse Monthly Income: " << getSpouseMonthlyIncome() << endl;
+    Calculator::display();
+
+}
+
+void Income::display(bool displayAll) {
+	cout << "Your Monthly Income: " << getYourMonthlyIncome() << endl;
+	cout << "Spouse Monthly Income: " << getSpouseMonthlyIncome() << endl;
+	Calculator::display(displayAll);
 }
