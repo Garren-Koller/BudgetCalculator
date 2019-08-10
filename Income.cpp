@@ -14,8 +14,7 @@ Income::Income()
 }
 
 Income::~Income()
-{
-}
+= default;
 
 void Income::setYourMonthlyIncome(double netPayYours)
 {

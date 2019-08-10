@@ -4,9 +4,7 @@ Expenses::Expenses() {
 
 }
 
-Expenses::~Expenses() {
-
-}
+Expenses::~Expenses() = default;
 
 void Expenses::setMortgage(double mortgage) {
  this->mortgage = mortgage;

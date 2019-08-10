@@ -16,6 +16,7 @@ using std::ofstream;
 using std::ostream_iterator;
 using std::string;
 using std::copy;
+
 void Intro();
 
 int main()
