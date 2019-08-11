@@ -124,6 +124,7 @@ Expenses::Expenses(
     addExpences(clothingForFamily);
     addExpences(dryCleaningLaundry);
     addExpences(barberBeautyShop);
+    addExpences(childCare);
     addExpences(childSupportPayments);
     addExpences(schoolTuitionSupplies);
     addExpences(creditCards);
