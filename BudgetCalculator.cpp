@@ -23,12 +23,12 @@ void Intro();
 int main()
 {//Intro();
 
-    double mortgage, mortgage2nd, insurance, propertyTax, homeMaintenance, electricGas, waterSewer, phoneCell, cableInternet,
+    double income, spouseIncome, mortgage, mortgage2nd, insurance, propertyTax, homeMaintenance, electricGas, waterSewer, phoneCell, cableInternet,
             carPayment, carPayment2nd, monthlyCarInsurance, gasoline, carMaintenance, parkingTolls, groceriesHouseholdGoods,
             schoolLunches, mealsOut, healthInsurance, prescriptions, lifeInsurance, clothingForFamily, dryCleaningLaundry,
             barberBeautyShop, childCare, childSupportPayments, schoolTuitionSupplies, creditCards, storeCards, medicalDebt,
             studentLoans, taxPayments, miscellaneousDebtPayments, hobbiesSports, tobaccoAlcohol, newspaperMagazines, travelRecreation,
-            churchCharitableDonations, petCare, holidaysBirthdays, otherExpenses, income;
+            churchCharitableDonations, petCare, holidaysBirthdays, otherExpenses ;
 
     cout << "Budget Calculator" << endl;
     cout << "" << endl;
@@ -38,6 +38,11 @@ int main()
 //Income
     cout << "Total Income:" << endl;
     cin >> income;
+
+    cout << "Total of Spouse Income:" << endl;
+    cin >> spouseIncome;
+
+    Income x (income, spouseIncome);
 
 //Housing
     cout << "Mortgage:" << endl;
@@ -111,7 +116,7 @@ int main()
     cout << "Medical Debt:" << endl;
     cin >> medicalDebt;
     cout << "Student Loans:" << endl;
-    cin >>  studentLoans;
+    cin >> studentLoans;
     cout << "Tax Payments:" << endl;
     cin >>  taxPayments;
     cout << "Miscellaneous Debt Payments:" << endl;
@@ -127,7 +132,7 @@ int main()
     cout << "Travel Recreation:" << endl;
     cin >> travelRecreation;
     cout << "Church Charitable Donations:" << endl;
-    cin >>   churchCharitableDonations;
+    cin >> churchCharitableDonations;
     cout << "Pet Care:" << endl;
     cin >> petCare;
     cout << "Holidays Birthdays:" << endl;
@@ -137,8 +142,20 @@ int main()
 
 
 
+    Expenses z (mortgage, mortgage2nd, insurance, propertyTax, homeMaintenance, electricGas, waterSewer, phoneCell, cableInternet,
+             carPayment, carPayment2nd, monthlyCarInsurance, gasoline, carMaintenance, parkingTolls, groceriesHouseholdGoods,
+             schoolLunches, mealsOut, healthInsurance, prescriptions, lifeInsurance, clothingForFamily, dryCleaningLaundry,
+             barberBeautyShop, childCare, childSupportPayments, schoolTuitionSupplies, creditCards, storeCards, medicalDebt,
+             studentLoans, taxPayments, miscellaneousDebtPayments, hobbiesSports, tobaccoAlcohol, newspaperMagazines, travelRecreation,
+             churchCharitableDonations, petCare, holidaysBirthdays, otherExpenses);
 
-	std::vector<std::string> example;
+
+    x.display(true);
+    z.display(true);
+
+
+
+    /*std::vector<std::string> example;
 	example.emplace_back("this");
 	example.emplace_back("is");
 	example.emplace_back("a");
@@ -155,6 +172,7 @@ int main()
 	Income i(1000, 3000);
 
 	i.display(true);
+     */
 }
 
 
