@@ -42,8 +42,8 @@ int main()
     cout << "Total of Spouse Income:" << endl;
     cin >> spouseIncome;
 
-    Income x (income, spouseIncome);
-
+    Income x(income, spouseIncome);
+/*
 //Housing
     cout << "Mortgage:" << endl;
     cin >> mortgage;
@@ -149,9 +149,9 @@ int main()
              studentLoans, taxPayments, miscellaneousDebtPayments, hobbiesSports, tobaccoAlcohol, newspaperMagazines, travelRecreation,
              churchCharitableDonations, petCare, holidaysBirthdays, otherExpenses);
 
-
+*/
     x.display(true);
-    z.display(true);
+    //z.display(true);
 
 
 
