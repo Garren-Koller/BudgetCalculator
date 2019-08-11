@@ -10,7 +10,8 @@ class Calculator
 public:
 	Calculator();
 	Calculator(double totalExpences,double totalIncome, double moneyLeft);
-	~Calculator();
+
+	virtual ~Calculator();
 
 	void addExpences(double currentExpence);
 	void addIncome(double currentIncome);

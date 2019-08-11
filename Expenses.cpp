@@ -44,6 +44,105 @@ Expenses::Expenses() {
     this-> otherExpenses = 0.0;
 }
 
+Expenses::Expenses(
+        double mortgage, double mortgage2nd, double insurance, double propertyTax, double homeMaintenance,
+        double electricGas, double waterSewer, double phoneCell, double cableInternet, double carPayment,
+        double carPayment2nd, double monthlyCarInsurance, double gasoline, double carMaintenance,
+        double parkingTolls, double groceriesHouseholdGoods, double schoolLunches, double mealsOut,
+        double healthInsurance, double prescriptions, double lifeInsurance, double clothingForFamily,
+        double dryCleaningLaundry, double barberBeautyShop, double childCare, double childSupportPayments,
+        double schoolTuitionSupplies, double creditCards, double storeCards, double medicalDebt,
+        double studentLoans, double taxPayments, double miscellaneousDebtPayments, double hobbiesSports,
+        double tobaccoAlcohol, double newspaperMagazines, double travelRecreation,
+        double churchCharitableDonations, double petCare, double holidaysBirthdays, double otherExpenses)
+
+{
+
+    this-> mortgage = mortgage;
+    this-> mortgage2nd = mortgage2nd;
+    this-> insurance = insurance;
+    this-> propertyTax = propertyTax;
+    this-> homeMaintenance = homeMaintenance;
+    this-> electricGas = electricGas;
+    this-> waterSewer = waterSewer;
+    this-> phoneCell = phoneCell;
+    this-> cableInternet = cableInternet;
+    this-> carPayment = carPayment;
+    this-> carPayment2nd = carPayment2nd;
+    this-> monthlyCarInsurance = monthlyCarInsurance;
+    this-> gasoline = gasoline;
+    this-> carMaintenance = carMaintenance;
+    this-> parkingTolls = parkingTolls;
+    this-> groceriesHouseholdGoods = groceriesHouseholdGoods;
+    this-> schoolLunches = schoolLunches;
+    this-> mealsOut = mealsOut;
+    this-> healthInsurance = healthInsurance;
+    this-> prescriptions = prescriptions;
+    this-> lifeInsurance = lifeInsurance;
+    this-> clothingForFamily = clothingForFamily;
+    this-> dryCleaningLaundry = dryCleaningLaundry;
+    this-> barberBeautyShop = barberBeautyShop;
+    this-> childCare = childCare;
+    this-> childSupportPayments = childSupportPayments;
+    this-> schoolTuitionSupplies = schoolTuitionSupplies;
+    this-> creditCards = creditCards;
+    this-> storeCards = storeCards;
+    this-> medicalDebt = medicalDebt;
+    this-> studentLoans = studentLoans;
+    this-> taxPayments = taxPayments;
+    this-> miscellaneousDebtPayments = miscellaneousDebtPayments;
+    this-> hobbiesSports = hobbiesSports;
+    this-> tobaccoAlcohol = tobaccoAlcohol;
+    this-> newspaperMagazines = newspaperMagazines;
+    this-> travelRecreation = travelRecreation;
+    this-> churchCharitableDonations = churchCharitableDonations;
+    this-> petCare = petCare;
+    this-> holidaysBirthdays = holidaysBirthdays;
+    this-> otherExpenses = otherExpenses;
+
+    addExpences(mortgage);
+    addExpences(mortgage2nd);
+    addExpences(insurance);
+    addExpences(propertyTax);
+    addExpences(homeMaintenance);
+    addExpences(electricGas);
+    addExpences(waterSewer);
+    addExpences(phoneCell);
+    addExpences(cableInternet);
+    addExpences(carPayment);
+    addExpences(carPayment2nd);
+    addExpences(monthlyCarInsurance);
+    addExpences(gasoline);
+    addExpences(carMaintenance);
+    addExpences(parkingTolls);
+    addExpences(groceriesHouseholdGoods);
+    addExpences(schoolLunches);
+    addExpences(mealsOut);
+    addExpences(healthInsurance);
+    addExpences(prescriptions);
+    addExpences(lifeInsurance);
+    addExpences(clothingForFamily);
+    addExpences(dryCleaningLaundry);
+    addExpences(barberBeautyShop);
+    addExpences(childSupportPayments);
+    addExpences(schoolTuitionSupplies);
+    addExpences(creditCards);
+    addExpences(storeCards);
+    addExpences(medicalDebt);
+    addExpences(studentLoans);
+    addExpences(taxPayments);
+    addExpences(miscellaneousDebtPayments);
+    addExpences(hobbiesSports);
+    addExpences(tobaccoAlcohol);
+    addExpences(newspaperMagazines);
+    addExpences(travelRecreation);
+    addExpences(churchCharitableDonations);
+    addExpences(petCare);
+    addExpences(holidaysBirthdays);
+    addExpences(otherExpenses);
+}
+
+
 Expenses::~Expenses() = default;
 
 void Expenses::setMortgage(double mortgage) {
@@ -374,60 +473,94 @@ double Expenses::getOtherExpenses() {
     return otherExpenses;
 }
 
-Expenses::Expenses(
-                    double mortgage, double mortgage2nd, double insurance, double propertyTax, double homeMaintenance,
-                   double electricGas, double waterSewer, double phoneCell, double cableInternet, double carPayment,
-                   double carPayment2nd, double monthlyCarInsurance, double gasoline, double carMaintenance,
-                   double parkingTolls, double groceriesHouseholdGoods, double schoolLunches, double mealsOut,
-                   double healthInsurance, double prescriptions, double lifeInsurance, double clothingForFamily,
-                   double dryCleaningLaundry, double barberBeautyShop, double childCare, double childSupportPayments,
-                   double schoolTuitionSupplies, double creditCards, double storeCards, double medicalDebt,
-                   double studentLoans, double taxPayments, double miscellaneousDebtPayments, double hobbiesSports,
-                   double tobaccoAlcohol, double newspaperMagazines, double travelRecreation,
-                   double churchCharitableDonations, double petCare, double holidaysBirthdays, double otherExpenses)
+void Expenses::display() {
+    cout << "Mortgage: " << getMortgage() << endl;
+    cout << "2nd Mortgage: " << getMortgage2nd() << endl;
+    cout << "Insurance: " << getInsurance() << endl;
+    cout << "Property Taxes: " << getPropertyTax() << endl;
+    cout << "Home Maintenance: " << getHomeMaintenance() << endl;
+    cout << "Electric / Gas: " << getElectricGas() << endl;
+    cout << "Water / Sewer: " << getWaterSewer() << endl;
+    cout << "Cell Phone: " << getPhoneCell() << endl;
+    cout << "Cable Internet: " << getCableInternet() << endl;
+    cout << "Car Payment: " << getCarPayment() << endl;
+    cout << "Car Payment 2nd: " << getCarPayment2nd() << endl;
+    cout << "Monthly Car insurance: " << getMonthlyCarInsurance() << endl;
+    cout << "Gasoline: " << getGasoline() << endl;
+    cout << "Car Maintenance: " << getCarMaintenance() << endl;
+    cout << "Parking Tolls: " << getParkingTolls() << endl;
+    cout << "Groceries / Household Goods" << getGroceriesHouseholdGoods() << endl;
+    cout << "School Lunches: " << getSchoolLunches() << endl;
+    cout << "Meals Out: " << getMealsOut() << endl;
+    cout << "Health Insurance: " << getHealthInsurance() << endl;
+    cout << "Prescriptions: " << getPrescriptions() << endl;
+    cout << "Life Insurance: " << getLifeInsurance() << endl;
+    cout << "Clothing For Family: " << getClothingForFamily() << endl;
+    cout << "Dry Cleaning Laundry: " << getDryCleaningLaundry() << endl;
+    cout << "Barber / Beauty Shop: " << getBarberBeautyShop() << endl;
+    cout << "Child Care: " << getChildCare() << endl;
+    cout << "Child Support Payments: " << getChildSupportPayments() << endl;
+    cout << "School Tuition Supplies: " << getSchoolTuitionSupplies() << endl;
+    cout << "Credit Cards: " << getCreditCards() << endl;
+    cout << "Store Cards: " << getStoreCards() << endl;
+    cout << "Medical Debt: " << getMedicalDebt() << endl;
+    cout << "Student Loans: " << getMedicalDebt() << endl;
+    cout << "Tax Payments: " << getTaxPayments() << endl;
+    cout << "Miscellaneous Debt Payments: " << getMiscellaneousDebtPayments() << endl;
+    cout << "Hobbies Sports: " << getHobbiesSports() << endl;
+    cout << "Tabacco / Alcohol: " << getTobaccoAlcohol() << endl;
+    cout << "Newspaper Magazines" << getNewspaperMagazines() << endl;
+    cout << "Travel Recreation: " << getTravelRecreation() << endl;
+    cout << "Church Charitable Donations: " << getChurchCharitableDonations() << endl;
+    cout << "Pet Care: " << getPetCare() << endl;
+    cout << "Holidays Birthdays: " << getHolidaysBirthdays() << endl;
+    cout << "Other Expenses: " << getOtherExpenses() << endl;
 
-                   {
-
-    this-> mortgage = mortgage;
-    this-> mortgage2nd = mortgage2nd;
-    this-> insurance = insurance;
-    this-> propertyTax = propertyTax;
-    this-> homeMaintenance = homeMaintenance;
-    this-> electricGas =electricGas;
-    this-> waterSewer = waterSewer;
-    this-> phoneCell = phoneCell;
-    this-> cableInternet = cableInternet;
-    this-> carPayment = carPayment;
-    this-> carPayment2nd = carPayment2nd;
-    this-> monthlyCarInsurance = monthlyCarInsurance;
-    this-> gasoline = gasoline;
-    this-> carMaintenance = carMaintenance;
-    this-> parkingTolls = parkingTolls;
-    this-> groceriesHouseholdGoods = groceriesHouseholdGoods;
-    this-> schoolLunches = schoolLunches;
-    this-> mealsOut = mealsOut;
-    this-> healthInsurance = healthInsurance;
-    this-> prescriptions = prescriptions;
-    this-> lifeInsurance = lifeInsurance;
-    this-> clothingForFamily = clothingForFamily;
-    this-> dryCleaningLaundry = dryCleaningLaundry;
-    this-> barberBeautyShop = barberBeautyShop;
-    this-> childCare = childCare;
-    this-> childSupportPayments = childSupportPayments;
-    this-> schoolTuitionSupplies = schoolTuitionSupplies;
-    this-> creditCards = creditCards;
-    this-> storeCards = storeCards;
-    this-> medicalDebt = medicalDebt;
-    this-> studentLoans = studentLoans;
-    this-> taxPayments = taxPayments;
-    this-> miscellaneousDebtPayments = miscellaneousDebtPayments;
-    this-> hobbiesSports = hobbiesSports;
-    this-> tobaccoAlcohol = tobaccoAlcohol;
-    this-> newspaperMagazines = newspaperMagazines;
-    this-> travelRecreation = travelRecreation;
-    this-> churchCharitableDonations = churchCharitableDonations;
-    this-> petCare = petCare;
-    this-> holidaysBirthdays = holidaysBirthdays;
-    this-> otherExpenses = otherExpenses;
-
+    Calculator::display();
 }
+
+void Expenses::display(bool displayAll) {
+    cout << "Mortgage: " << getMortgage() << endl;
+    cout << "2nd Mortgage: " << getMortgage2nd() << endl;
+    cout << "Insurance: " << getInsurance() << endl;
+    cout << "Property Taxes: " << getPropertyTax() << endl;
+    cout << "Home Maintenance: " << getHomeMaintenance() << endl;
+    cout << "Electric / Gas: " << getElectricGas() << endl;
+    cout << "Water / Sewer: " << getWaterSewer() << endl;
+    cout << "Cell Phone: " << getPhoneCell() << endl;
+    cout << "Cable Internet: " << getCableInternet() << endl;
+    cout << "Car Payment: " << getCarPayment() << endl;
+    cout << "Car Payment 2nd: " << getCarPayment2nd() << endl;
+    cout << "Monthly Car insurance: " << getMonthlyCarInsurance() << endl;
+    cout << "Gasoline: " << getGasoline() << endl;
+    cout << "Car Maintenance: " << getCarMaintenance() << endl;
+    cout << "Parking Tolls: " << getParkingTolls() << endl;
+    cout << "Groceries / Household Goods" << getGroceriesHouseholdGoods() << endl;
+    cout << "School Lunches: " << getSchoolLunches() << endl;
+    cout << "Meals Out: " << getMealsOut() << endl;
+    cout << "Health Insurance: " << getHealthInsurance() << endl;
+    cout << "Prescriptions: " << getPrescriptions() << endl;
+    cout << "Life Insurance: " << getLifeInsurance() << endl;
+    cout << "Clothing For Family: " << getClothingForFamily() << endl;
+    cout << "Dry Cleaning Laundry: " << getDryCleaningLaundry() << endl;
+    cout << "Barber / Beauty Shop: " << getBarberBeautyShop() << endl;
+    cout << "Child Care: " << getChildCare() << endl;
+    cout << "Child Support Payments: " << getChildSupportPayments() << endl;
+    cout << "School Tuition Supplies: " << getSchoolTuitionSupplies() << endl;
+    cout << "Credit Cards: " << getCreditCards() << endl;
+    cout << "Store Cards: " << getStoreCards() << endl;
+    cout << "Medical Debt: " << getMedicalDebt() << endl;
+    cout << "Student Loans: " << getMedicalDebt() << endl;
+    cout << "Tax Payments: " << getTaxPayments() << endl;
+    cout << "Miscellaneous Debt Payments: " << getMiscellaneousDebtPayments() << endl;
+    cout << "Hobbies Sports: " << getHobbiesSports() << endl;
+    cout << "Tabacco / Alcohol: " << getTobaccoAlcohol() << endl;
+    cout << "Newspaper Magazines" << getNewspaperMagazines() << endl;
+    cout << "Travel Recreation: " << getTravelRecreation() << endl;
+    cout << "Church Charitable Donations: " << getChurchCharitableDonations() << endl;
+    cout << "Pet Care: " << getPetCare() << endl;
+    cout << "Holidays Birthdays: " << getHolidaysBirthdays() << endl;
+    cout << "Other Expenses: " << getOtherExpenses() << endl;
+    Calculator::display(displayAll);
+}
+

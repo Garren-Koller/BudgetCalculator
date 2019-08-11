@@ -127,6 +127,8 @@ public:
     double getHolidaysBirthdays();
     double getOtherExpenses();
 
+	void display();
+	void display(bool displayAll);
 
 private:
 	// Housing
