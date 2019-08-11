@@ -7,10 +7,10 @@ Calculator::Calculator() {
     moneyLeft = 0.0;
 }
 
-Calculator::Calculator(double totalExpences, double totalIncome, double moneyLeft) {
+Calculator::Calculator(double totalExpences, double totalIncome) {
     this-> totalExpences = totalExpences;
     this-> totalIncome = totalIncome;
-    this-> moneyLeft = moneyLeft;
+
 }
 
 Calculator::~Calculator() = default;

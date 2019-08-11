@@ -15,6 +15,11 @@ Income::Income()
 	this->spouseMonthlyIncome = 0.0;
 }
 
+double Income::getTotalIncome() {
+	return Calculator::getTotalIncome();
+}
+
+
 Income::~Income()
 = default;
 
@@ -50,3 +55,4 @@ void Income::display(bool displayAll) {
 	cout << "Spouse Monthly Income: " << getSpouseMonthlyIncome() << endl;
 	Calculator::display(displayAll);
 }
+

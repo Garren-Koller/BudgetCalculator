@@ -9,7 +9,7 @@ class Calculator
 
 public:
 	Calculator();
-	Calculator(double totalExpences,double totalIncome, double moneyLeft);
+	Calculator(double totalExpences,double totalIncome);
 
 	virtual ~Calculator();
 

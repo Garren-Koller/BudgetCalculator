@@ -8,6 +8,7 @@ public:
 	Income();
 	~Income();
 
+	double getTotalIncome();
 	void setYourMonthlyIncome(double netPayYours);
 	void setSpouseMonthlyIncome(double netPaySpouce);
 

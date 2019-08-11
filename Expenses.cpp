@@ -143,6 +143,11 @@ Expenses::Expenses(
     addExpences(otherExpenses);
 }
 
+double Expenses::getTotalExpenses() {
+    return Calculator::getTotalExpence();
+}
+
+
 
 Expenses::~Expenses() = default;
 

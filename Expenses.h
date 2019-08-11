@@ -16,6 +16,8 @@ public:
              double storeCards, double medicalDebt, double studentLoans, double taxPayments, double miscellaneousDebtPayments,
              double hobbiesSports, double tobaccoAlcohol, double newspaperMagazines, double travelRecreation,
              double churchCharitableDonations, double petCare, double holidaysBirthdays, double otherExpenses);
+
+	double getTotalExpenses();
     // Housing
 	void setMortgage(double mortgage);
     void setMortgage2nd(double mortgage2nd);
