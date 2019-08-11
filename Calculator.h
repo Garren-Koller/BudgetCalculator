@@ -24,7 +24,7 @@ public:
 	void displayExpencesTotal();
 	void displayIncomeTotal();
 
-    double getMoneyLeft();
+    double getMoneyLeft(double income, double Expenses);
 private:
 
 	double totalExpences;

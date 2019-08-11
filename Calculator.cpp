@@ -37,7 +37,7 @@ void Calculator::display(bool displayMonetLeft) {
     if(displayMonetLeft){
 
 
-        cout << "Money Remaining: " << getMoneyLeft() << endl;
+        //cout << "Money Remaining: " << getMoneyLeft() << endl;
     }
 }
 
@@ -57,8 +57,8 @@ double Calculator::getTotalIncome() {
     return totalIncome;
 }
 
-double Calculator::getMoneyLeft() {
-    moneyLeft = totalIncome - totalExpences;
+double Calculator::getMoneyLeft(double income, double Expenses) {
+    moneyLeft = income - Expenses;
     return moneyLeft;
 }
 
